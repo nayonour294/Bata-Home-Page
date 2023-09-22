@@ -1,11 +1,11 @@
 "use strict";
 
-let products = [
+let MenProducts = [
     {
         name: "Bata",
         title: "Bata REMON Men's Casual Loafer",
         image: "images/Men's-show/show1.jpg",
-        price: 60,
+        price: "2,369.00",
         inCart:0
     },
 
@@ -13,7 +13,7 @@ let products = [
         name: "Bata Red Label",
         title: "Bata Red Label NELSON Casual Lace-Up Sneaker",
         image: "images/Men's-show/show2.jpg",
-        price: 40,
+        price: "5,529.00",
         inCart:0
     },
 
@@ -21,7 +21,7 @@ let products = [
         name: "Bata",
         title: " Bata TOKYO Loafer for Men",
         image: "images/Men's-show/show3.jpg",
-        price: 30,
+        price: "2,369.00",
         inCart:0
     },
 
@@ -29,34 +29,89 @@ let products = [
         name: "Bata",
         title: " Bata SHELDON Casual Sneaker for Men",
         image: "images/Men's-show/show4.jpg",
-        price: 50,
+        price: "2,606.00",
         inCart:0
     },
     {
         name: "North Star",
         title: "  North Star ARGON Lace-Up Lifestyle Sneaker for Men",
         image: "images/Men's-show/show5.jpg",
-        price: 50,
+        price: "2,369.00",
         inCart:0
     },
     {
         name: "North Star",
         title: " North Star PAOLO Slip-On Lifestyle Sneaker for Men",
         image: "images/Men's-show/show6.jpg",
-        price: 50,
+        price: "2,369.00",
         inCart:0
     },
     {
         name: "Bata",
         title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
         image: "images/Men's-show/show7.jpg",
-        price: 50,
+        price: "2,764.00",
         inCart:0
     }
 ];
 
 const cardSlider = document.querySelector('.card-slider');
 
+const showMenProducts = (MenProducts) => {
+  MenProducts.map(MenProduct => {
+    cardSlider.innerHTML += `
+      <div class="card swiper-slide">
+          <div class="card-image">
+              <img src="${MenProduct.image}" alt="Images">
+          </div>
+          <div class="card-content">
+              <p>${MenProduct.name}</p>
+              <p>${MenProduct.title}</p>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <h4>Tk ${MenProduct.price}</h4>
+          </div>
+          <div class="add-cart">
+            <a href="#">Shop Now</a>
+          </div>
+      </div>
+    `
+  });
+  
+};
+
+showMenProducts(MenProducts);
+
+const justCardSlider = document.querySelector('.just-card-slider');
+
+const showWomenProducts = (MenProducts) => {
+  MenProducts.map(MenProduct => {
+    justCardSlider.innerHTML += `
+      <div class="card swiper-slide">
+          <div class="card-image">
+              <img src="${MenProduct.image}" alt="Images">
+          </div>
+          <div class="card-content">
+              <p>${MenProduct.name}</p>
+              <p>${MenProduct.title}</p>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <h4>Tk ${MenProduct.price}</h4>
+          </div>
+          <div class="add-cart">
+            <a href="#">Shop Now</a>
+          </div>
+      </div>
+    `
+  });
+  
+};
 
 
 
@@ -65,7 +120,11 @@ const cardSlider = document.querySelector('.card-slider');
 
 
 
-var swiper = new Swiper('.slide-content', {
+
+
+
+const sliderOne = () => {
+  var swiper = new Swiper('.slide-content', {
     slidesPerView: 5,
     spaceBetween: 30,
     slidesPerGroup: 3,
@@ -88,3 +147,40 @@ var swiper = new Swiper('.slide-content', {
 
     return direction;
   }
+}
+
+sliderOne();
+
+  // =============================================================
+
+
+const slidertwo = () => {
+  var justSwiper = new Swiper('.just-slide', {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loopFillGroupWithBlank: true,
+    direction: getDirection2(),
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        justSwiper.changeDirection(getDirection2());
+      },
+    },
+  });
+
+  function getDirection2() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+}
+
+
+
+showWomenProducts(MenProducts);
+slidertwo();
