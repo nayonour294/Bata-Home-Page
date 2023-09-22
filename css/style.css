@@ -481,4 +481,34 @@ h6 {
 	line-height: 15px;
 }
 
+.product-feature-container .feature-products .card {
+    width: 20%;
+    text-align: center;
+}
+
+.product-feature-container .feature-products {
+    position: relative;
+}
+
+.product-feature-container .feature-products .card img {
+    width: 100%;
+}
+
+.swiper-button-next {
+    position: absolute;
+    right: 0px;
+    top: 200px
+    /* transform: rotate(90deg); */
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    /* transform: rotate(90deg); */
+}
+
+
 /* Features Product Section End Here */
+
+
