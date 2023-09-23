@@ -491,15 +491,7 @@ h6 {
     text-align: center;
 }
 
-.just-card-slider {
-    display: flex;
-    gap: 5rem;
-}
 
-.just-card-slider .card {
-    width: 20%;
-    text-align: center;  
-}
 
 .product-feature-container .feature-products {
     position: relative;
@@ -507,18 +499,12 @@ h6 {
     
 }
 
-.just-products {
-    position: relative;
-    padding: 2rem 0rem;
-}
+
 
 .product-feature-container .feature-products .card img {
     width: 100%;
 }
 
-.just-card-slider .card img {
-    width: 100%;
-}
 
 .swiper-button-next {
     position: absolute;
@@ -698,5 +684,164 @@ h6 {
 
 
 /* Display Banner Section End Here */
+
+
+/* Just Landed Product Section Start Here */
+
+.just-landed-container,
+.best-seller-container {
+    max-width: 70%;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.just-landed-container .title,
+.best-seller-container .title {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 2rem;
+}
+
+.just-landed-container .card-image img,
+.best-seller-container .card-image img {
+    width: 100%;
+}
+
+.ju-card .card-image img,
+.best-card .card-image img {
+    transform: translateY(-260px);
+    transition: all .3s ease;
+}
+
+.ju-card:hover .card-image img,
+.best-card:hover .card-image img {
+    transform: translateY(0px);
+}
+
+.ju-card,
+.best-card {
+    padding: 0.8rem 1rem 2rem 1rem;
+    border: none;
+    transition: all .3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ju-card:hover,
+.best-card:hover {
+    box-shadow: 0 1px 5px #0003;
+    transform: scale(1.05);
+}
+
+.card-content p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 1rem;
+}
+
+.card-content p:nth-child(2) {
+    font-size: 14px;
+}
+
+.ju-card-content h4,
+.best-card-content h4 {
+    color: var(--danger);
+    padding: 0.8rem 0;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.ju-card:hover .add-cart,
+.best-card:hover .add-cart {
+    opacity: 1;
+    background-color: var(--black);
+}
+
+.ju-card .add-cart:hover,
+.best-card .add-cart:hover {
+    background-color: var(--danger);
+}
+
+.add-cart a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Just Landed Product Section End Here */
+
+/* Advertise Banner Section Start Here */
+
+.advertise-banner-container {
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.advertise-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+
+.advertise-row img {
+    width: 100%;
+    
+}
+
+.advertise-row .left-banner a,
+.advertise-row .right-banner a{
+    position: relative;
+    display: block;
+}
+
+.advertise-row .left-banner a::before,
+.advertise-row .left-banner a::after,
+.advertise-row .right-banner a::before,
+.advertise-row .right-banner a::after {
+	content: "";
+	position: absolute;
+	background: rgba(255,255,255,.2);
+	width: 0%;
+	height: 0%;
+	transition: all .4s ease-in-out;
+	border: 1px solid rgba(255,255,255,.6);
+	visibility: hidden;
+}
+
+.advertise-row .left-banner a::after,
+.advertise-row .right-banner a::after {
+	bottom: 0;
+	right: 0;
+}
+
+
+
+.advertise-row .left-banner a::before,
+.advertise-row .right-banner a::before {
+	top: 0;
+	left: 0;
+}
+
+.advertise-row .left-banner a:hover::before,
+.advertise-row .left-banner a:hover::after,
+.advertise-row .right-banner a:hover::before,
+.advertise-row .right-banner a:hover::after {
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+}
+
+/* Advertise Banner Section End Here */
+
+/* Best Seller Section Start Here */
+
+/* This Style Attact with Top Section */
+
+/* Best Seller Section End Here */
+
 
 
