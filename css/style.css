@@ -502,7 +502,7 @@ h6 {
 
 
 .product-feature-container .feature-products .card img {
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -534,6 +534,7 @@ h6 {
     padding: 0.8rem 1rem 2rem 1rem;
     border: none;
     transition: all .3s ease;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -557,7 +558,7 @@ h6 {
 
 .card:hover .card-image img {
     /* transform: translateY(0px); */
-    transform: scale(1.25) rotate(-15deg);
+    transform: scale(1.25) rotate(15deg);
 }
 
 .card-content p:nth-child(1) {
@@ -705,7 +706,7 @@ h6 {
 
 .just-landed-container .card-image img,
 .best-seller-container .card-image img {
-    width: 100%;
+    width: 80%;
 }
 
 .ju-card .card-image img,
@@ -717,7 +718,7 @@ h6 {
 .ju-card:hover .card-image img,
 .best-card:hover .card-image img {
     /* transform: translateY(0px); */
-    transform: scale(1.25) rotate(-15deg);
+    transform: scale(1.25) rotate(15deg);
 }
 
 .ju-card,
@@ -727,12 +728,20 @@ h6 {
     transition: all .3s ease;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .ju-card:hover,
 .best-card:hover {
     box-shadow: 0 1px 5px #0003;
     transform: scale(1.05);
+}
+
+.card-content,
+.ju-card-content,
+.best-card-content {
+    position: relative;
+    z-index: 2;
 }
 
 .card-content p:nth-child(1) {
@@ -744,6 +753,8 @@ h6 {
 .card-content p:nth-child(2) {
     font-size: 14px;
 }
+
+
 
 .ju-card-content h4,
 .best-card-content h4 {
