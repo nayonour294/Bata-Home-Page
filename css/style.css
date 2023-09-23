@@ -856,5 +856,199 @@ h6 {
 
 /* Best Seller Section End Here */
 
+/* Advertiseing Section Start Here */
+
+
+.advertise-shop-container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.advertise-shop-container .shop-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.advertise-shop-container .title {
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+
+.advertise-shop-container .shop-row .banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.advertise-shop-container .shop-row .banner img {
+    width: 100%;
+    height: 45vh;
+    transition: all .7s ease;
+}
+
+.advertise-shop-container .shop-row .banner:hover img {
+    transform: scale3d(1.1,1.1,1); 
+}
+
+.advertise-shop-container .shop-row .banner::before {
+    position: absolute;
+	content: "";
+    display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #232323;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 2;
+	transition: all .5s ease;
+}
+
+.advertise-shop-container .shop-row .banner:hover::before {
+    opacity: 0.3;
+}
+
+.advertise-shop-container .shop-row .banner-content {
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0,0,0,.07);
+}
+
+.advertise-shop-container .shop-row .banner-content .attact {
+    background: var(--white);
+    display: inline-block;
+    padding: 0.5rem 8rem;
+    position: relative;
+    top: -15px;
+    z-index: 4;
+}
+
+.advertise-shop-container .shop-row .banner-content span {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 4px;
+    letter-spacing: .02em;
+}
+
+.advertise-shop-container .shop-row .banner-content h4 {
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	letter-spacing: .02em;
+}
+
+.advertise-shop-container .shop-row .banner-content p {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 1rem;
+}
+
+.advertise-shop-container .shop-row .banner-content a {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: .02em;
+	font-size: 16px;
+	line-height: 22px;
+	white-space: nowrap;
+	display: inline-block;
+	padding-bottom: 1.5rem;
+	cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+/* Advertiseing Section End Here */
+
+/* Recent Posts Section Start Here */
+
+.post-container {
+    max-width: 70%;
+    margin: 2rem auto; 
+    padding: 0 2rem;
+}
+
+.post-container .post-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.post-container .post-row .post-box {
+    width: 50%;
+}
+
+.post-container .post-row .post-banner {
+    overflow: hidden;
+    
+}
+
+.post-container .post-row .post-banner img {
+    width: 100%;
+    transition: all .7s ease;
+}
+
+.post-container .post-row .post-banner:hover img {
+    transform: scale3d(1.1,1.1,1); 
+}
+
+.post-container .post-row .post-content {
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0,0,0,.07);
+    
+}
+
+.post-container .post-row .post-content span{
+    display: inline-block;
+    line-height: 20px;
+    color: #969696;
+    letter-spacing: .02em;
+    margin-bottom: 15px;
+    padding-top: 21px;
+    background: var(--white);
+    font-size: 14px;
+    padding: 0.5rem 8rem;
+    position: relative;
+    z-index: 4;
+    top: -30px;
+}
+
+.post-container .post-row .post-content h5 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    margin-bottom: 14px;
+    padding: 0 115px;
+    display: inline-block;
+}
+
+.post-container .post-row .post-content p {
+    font-size: 14px;
+    padding: 0 5rem;
+}
+
+.post-container .post-row .post-content a {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: .02em;
+	font-size: 16px;
+	line-height: 22px;
+	white-space: nowrap;
+	display: inline-block;
+	padding-bottom: 1.5rem;
+	cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Recent Posts Section End Here */
+
 
 
