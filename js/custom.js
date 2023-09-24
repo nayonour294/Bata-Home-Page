@@ -55,6 +55,25 @@ let MenProducts = [
     }
 ];
 
+const socialSlides = document.querySelector('.social-slides');
+
+
+let socialImages = ["social1", "social2", "social3", "social4", "social5", "social6", "social7", "social8", "social9", "social10", "social11"];
+
+const socialSlide = () => {
+  socialImages.map(socialImage => {
+    socialSlides.innerHTML += `
+    
+    <div class="slide swiper-slide">
+        <img src="images/${socialImage}.avif" alt="Social Images">
+    </div>
+
+    `
+  })
+}
+
+socialSlide();
+
 const cardSlider = document.querySelector('.card-slider');
 
 const showMenProducts = (MenProducts) => {
@@ -239,3 +258,33 @@ const sliderthree = () => {
 }
 
 sliderthree();
+
+
+
+const socialSlider = () => {
+  var socialSwiper = new Swiper('.social-slide-container', {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loopFillGroupWithBlank: true,
+    direction: getDirection2(),
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        socialSwiper.changeDirection(getDirection2());
+      },
+    },
+  });
+
+  function getDirection2() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+}
+
+socialSlider();

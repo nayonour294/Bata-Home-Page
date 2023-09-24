@@ -1050,5 +1050,25 @@ h6 {
 
 /* Recent Posts Section End Here */
 
+/* Social Slider Section Start Here */
+
+.social-intro-container {
+    max-width: 70%;
+    margin: 2rem auto; 
+    padding: 0 2rem;
+}
+
+.social-intro-container .social-slides {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.social-slide-container img {
+    width: 100%;
+}
+
+/* Social Slider Section End Here */
+
 
 
