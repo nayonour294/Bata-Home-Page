@@ -1,5 +1,6 @@
 "use strict";
 
+// Object Creating Here
 let MenProducts = [
     {
         name: "Bata",
@@ -55,11 +56,16 @@ let MenProducts = [
     }
 ];
 
-const socialSlides = document.querySelector('.social-slides');
-
-
 let socialImages = ["social1", "social2", "social3", "social4", "social5", "social6", "social7", "social8", "social9", "social10", "social11"];
 
+// Elements Selection 
+const socialSlides = document.querySelector('.social-slides');
+const cardSlider = document.querySelector('.card-slider');
+const justCardSlider = document.querySelector('.just-card-slider');
+const bestCardSlider = document.querySelector('.best-card-slider');
+
+
+// Social Slide Function
 const socialSlide = () => {
   socialImages.map(socialImage => {
     socialSlides.innerHTML += `
@@ -74,8 +80,8 @@ const socialSlide = () => {
 
 socialSlide();
 
-const cardSlider = document.querySelector('.card-slider');
 
+// Product Showing Function
 const showMenProducts = (MenProducts) => {
   MenProducts.map(MenProduct => {
     cardSlider.innerHTML += `
@@ -104,8 +110,8 @@ const showMenProducts = (MenProducts) => {
 
 showMenProducts(MenProducts);
 
-const justCardSlider = document.querySelector('.just-card-slider');
 
+// Product Showing Function
 const showWomenProducts = (MenProducts) => {
   MenProducts.map(womenProduct => {
     justCardSlider.innerHTML += `
@@ -135,8 +141,8 @@ const showWomenProducts = (MenProducts) => {
 showWomenProducts(MenProducts);
 
 
-const bestCardSlider = document.querySelector('.best-card-slider');
 
+// Product Showing Function
 const showkidsProducts = (MenProducts) => {
   MenProducts.map(kidsProduct => {
     bestCardSlider.innerHTML += `
@@ -167,7 +173,7 @@ showkidsProducts(MenProducts);
 
 
 
-
+// Slide Function Here
 const sliderOne = () => {
   var swiper = new Swiper('.slide-content', {
     slidesPerView: 5,
@@ -198,7 +204,7 @@ sliderOne();
 
   // =============================================================
 
-
+// Slide Function Here
 const slidertwo = () => {
   var justSwiper = new Swiper('.just-slide-content', {
     slidesPerView: 5,
@@ -230,7 +236,7 @@ slidertwo();
 
 // =============================================================
 
-
+// Slide Function Here
 const sliderthree = () => {
   var bestSwiper = new Swiper('.best-slide-content', {
     slidesPerView: 5,
@@ -262,7 +268,7 @@ sliderthree();
 
 // ==============================================================
 
-
+// Slide Function Here
 const socialSlider = () => {
   var socialSwiper = new Swiper('.social-slide-container', {
     slidesPerView: 5,
