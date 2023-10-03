@@ -425,10 +425,12 @@ const showSelectedProduct = () => {
                     <div class="total">
                         <span>Subtotal: <b>TK ${item.inCart * item.price}.00</b></span>
                     </div>
-                    <div class="get-payment-form">
-                        <h5>add to cart</h5>
-                        <span><i class="fa-regular fa-heart"></i></span>
-                    </div>
+                    <a href="paymentPage.html">
+                        <div class="get-payment-form">
+                            <h5>add to cart</h5>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -525,6 +527,26 @@ function updateTotalCost() {
 }
 
 
+
+
+
+
 loadCartNumber();
 showSelectedProduct();
+
+
+const cartShopping = document.querySelector('.shopDive');
+const shopingPage = document.querySelector('.shoping-page');
+
+cartShopping.addEventListener('click', () => {
+
+  shopingPage.style.display = "block";
+
+});
+
+shopingPage.addEventListener('click', () => {
+
+  shopingPage.style.display = "none";
+
+});
 
