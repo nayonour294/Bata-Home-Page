@@ -163,7 +163,90 @@ let menProducts = [
     Availability: "In stock",
     inCart:0,
     size: [10, 9, 8, 7, 6]
+  },
+
+
+  // Best/kids Seller Product Object
+
+
+  {
+    name: "Bata",
+    title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+    image: "show15.jpg",
+    comparePrice: "4,999.00",
+    price: "3749",
+    code:  8813325,
+    Availability: "In stock",
+    inCart:0,
+    size: [10, 9, 8, 7, 6]
+  },
+  {
+    name: "Bata",
+    title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+    image: "show16.jpg",
+    comparePrice: "4,999.00",
+    price: "3749",
+    code:  8813325,
+    Availability: "In stock",
+    inCart:0,
+    size: [10, 9, 8, 7, 6]
+  },
+  {
+    name: "Bata",
+    title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+    image: "show17.jpg",
+    comparePrice: "4,999.00",
+    price: "3749",
+    code:  8813325,
+    Availability: "In stock",
+    inCart:0,
+    size: [10, 9, 8, 7, 6]
+  },
+  {
+    name: "Bata",
+    title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+    image: "show18.jpg",
+    comparePrice: "4,999.00",
+    price: "3749",
+    code:  8813325,
+    Availability: "In stock",
+    inCart:0,
+    size: [10, 9, 8, 7, 6]
+  },
+  {
+    name: "Bata",
+    title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+    image: "show19.jpg",
+    comparePrice: "4,999.00",
+    price: "3749",
+    code:  8813325,
+    Availability: "In stock",
+    inCart:0,
+    size: [10, 9, 8, 7, 6]
+  },
+  {
+    name: "Bata",
+    title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+    image: "show20.jpg",
+    comparePrice: "4,999.00",
+    price: "3749",
+    code:  8813325,
+    Availability: "In stock",
+    inCart:0,
+    size: [10, 9, 8, 7, 6]
+  },
+  {
+    name: "Bata",
+    title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+    image: "show21.jpg",
+    comparePrice: "4,999.00",
+    price: "3749",
+    code:  8813325,
+    Availability: "In stock",
+    inCart:0,
+    size: [10, 9, 8, 7, 6]
   }
+
 ];
 
 // let socialImages = ["social1", "social2", "social3", "social4", "social5", "social6", "social7", "social8", "social9", "social10", "social11"];

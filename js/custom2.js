@@ -109,6 +109,61 @@ let womenProducts = [
     }
 ];
 
+let bestSellerProducts = [
+    {
+        name: "Bata",
+        title: "Bata REMON Men's Casual Loafer",
+        image: "show15.jpg",
+        price: "2,369.00",
+        inCart:0
+    },
+
+    {
+        name: "Bata Red Label",
+        title: "Bata Red Label NELSON Casual Lace-Up Sneaker",
+        image: "show16.jpg",
+        price: "5,529.00",
+        inCart:0
+    },
+
+    {
+        name: "Bata",
+        title: " Bata TOKYO Loafer for Men",
+        image: "show17.jpg",
+        price: "2,369.00",
+        inCart:0
+    },
+
+    {
+        name: "Bata",
+        title: " Bata SHELDON Casual Sneaker for Men",
+        image: "show18.jpg",
+        price: "2,606.00",
+        inCart:0
+    },
+    {
+        name: "North Star",
+        title: "  North Star ARGON Lace-Up Lifestyle Sneaker for Men",
+        image: "show19.jpg",
+        price: "2,369.00",
+        inCart:0
+    },
+    {
+        name: "North Star",
+        title: " North Star PAOLO Slip-On Lifestyle Sneaker for Men",
+        image: "show20.jpg",
+        price: "2,369.00",
+        inCart:0
+    },
+    {
+        name: "Bata",
+        title: "North Star MAIRO Lace-Up Lifestyle Sneaker for Men",
+        image: "show21.jpg",
+        price: "2,764.00",
+        inCart:0
+    }
+];
+
 
 let socialImages = ["social1", "social2", "social3", "social4", "social5", "social6", "social7", "social8", "social9", "social10", "social11"];
 
@@ -208,12 +263,12 @@ showWomenProducts(womenProducts);
 
 
 // Product Showing Function
-const showkidsProducts = (MenProducts) => {
-  MenProducts.map(kidsProduct => {
+const showkidsProducts = (bestSellerProducts) => {
+    bestSellerProducts.map(kidsProduct => {
     bestCardSlider.innerHTML += `
       <div class="best-card swiper-slide">
           <div class="card-image">
-              <img src="images/best-img/${kidsProduct.image}" alt="Images">
+              <img src="images/Men's-show/${kidsProduct.image}" alt="Images">
           </div>
           <div class="best-card-content">
               <p>${kidsProduct.name}</p>
@@ -226,7 +281,7 @@ const showkidsProducts = (MenProducts) => {
               <h4>Tk ${kidsProduct.price}</h4>
           </div>
           <div class="add-cart">
-            <a href="#">Shop Now</a>
+            <a href="../other-index/ProductCard.html">Shop Now</a>
           </div>
       </div>
     `
@@ -234,7 +289,7 @@ const showkidsProducts = (MenProducts) => {
   
 };
 
-showkidsProducts(MenProducts);
+showkidsProducts(bestSellerProducts);
 
 
 
